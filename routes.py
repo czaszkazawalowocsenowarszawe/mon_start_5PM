@@ -5,4 +5,7 @@ from app import app  # импортирую главный модуль сайт
 @app.route('/')  #  если перейти на главную страницу сайта
 def main():  # вызовется функция
     return render_template('index.html')  # вернуть шаблон index.html
+@app.route('/contacts')
+def contacts():
+    return render_template('about.html')
 
